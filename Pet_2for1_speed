@@ -1,0 +1,9 @@
+ability(鬼影缠身) [round=1]
+change(#2) [!self(#2).played]
+change(#3) [self(#2).played]
+standby [self.aura(昏迷).exists]
+ability(#3) [enemy.hp<1010 & self.hpp<50 & self.ability(#3).strong]
+ability(#3) [enemy.hp<810 & self.ability(#3).strong]
+ability(#3) [enemy.hp<675 & self.hpp<50]
+ability(#3) [enemy.hp<540]
+ability(#1)
