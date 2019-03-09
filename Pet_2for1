@@ -1,14 +1,17 @@
+if [ enemy.quality = 4  ]
+    catch
+endif
 if [ self(#1).active ]
     use(#3) [ enemy.round = 1 ]
     change(#2) [ self(#2).hpp > 20 ]
     change(#3) [ self(#3).hpp > 20 ]
-    use(#1) 
+    use(#1)
     quit [ enemy(#3).dead & enemy(#2).dead ]
 endif
-standby [self.aura(昏迷).exists]
-standby [self.aura(昏睡).exists]
+standby [ self.aura(昏迷).exists ]
+standby [ self.aura(昏睡).exists ]
 if [ self(#2).active ]
-    change(#3) [ self(#2).hpp < 5 ]
+    change(#3) [ self(#2).hpp < 20 ]
     use(#1)
     if [ self.dead ]
         change(#1) [ enemy(#3).dead ]
@@ -16,7 +19,7 @@ if [ self(#2).active ]
     endif
 endif
 if [ self(#3).active ]
-    change(#2) [ self(#3).hpp < 5 ]
+    change(#2) [ self(#3).hpp < 20 ]
     use(#1)
     if [ self.dead ]
         change(#1) [ enemy(#2).dead ]
