@@ -8,7 +8,7 @@ endif
 standby [self.aura(昏迷).exists]
 standby [self.aura(昏睡).exists]
 if [ self(#2).active ]
-    change(#3) [ self(#2).hpp < 50 ]
+    change(#3) [ self(#2).hpp < 5 ]
     use(#1)
     if [ self.dead ]
         change(#1) [ enemy(#3).dead ]
@@ -16,7 +16,7 @@ if [ self(#2).active ]
     endif
 endif
 if [ self(#3).active ]
-    change(#2) [ self(#3).hpp < 50 ]
+    change(#2) [ self(#3).hpp < 5 ]
     use(#1)
     if [ self.dead ]
         change(#1) [ enemy(#2).dead ]
