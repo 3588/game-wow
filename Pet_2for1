@@ -10,6 +10,7 @@ if [ self(#1).active ]
 endif
 standby [ self.aura(昏迷).exists ]
 standby [ self.aura(昏睡).exists ]
+standby [ self.aura(被变形).exists ]
 if [ self(#2).active ]
     change(#3) [ self(#2).hpp < 20 & enemy(#3).hpp > 20 ]
     change(#1) [ self(#2).hpp < 20 & enemy(#3).hpp < 20 ]
