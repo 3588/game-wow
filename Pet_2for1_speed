@@ -1,11 +1,28 @@
 ability(1) [round=1]
+if [ self(#1).dead  ]
+    change(#1) [ self(#1).hpp > 20 ]
+    change(#2) [ self(#2).hpp > 20 ]
+    change(#3) [ self(#3).hpp > 20 ]
+    use(#1)
+endif
+if [ self(#2).dead  ]
+    change(#1) [ self(#1).hpp > 20 ]
+    change(#2) [ self(#2).hpp > 20 ]
+    change(#3) [ self(#3).hpp > 20 ]
+    use(#1)
+endif
+if [ self(#3).dead  ]
+    change(#1) [ self(#1).hpp > 20 ]
+    change(#2) [ self(#2).hpp > 20 ]
+    change(#3) [ self(#3).hpp > 20 ]
+    use(#1)
+endif
+
+
 change(#2) [!self(#2).played]
 change(#3) [self(#2).played]
 standby [ self.aura(昏迷).exists ]
 standby [ self.aura(昏睡).exists ]
 standby [ self.aura(被变形).exists ]
-ability(#3) [enemy.hp<1010 & self.hpp<50 & self.ability(#3).strong]
-ability(#3) [enemy.hp<810 & self.ability(#3).strong]
-ability(#3) [enemy.hp<675 & self.hpp<50]
-ability(#3) [enemy.hp<540]
+
 ability(#1)
