@@ -2,9 +2,9 @@ if [ enemy.quality = 4  ]
     catch
 endif
 if [ self(#1).active ]
+    use(#1) [ enemy.round = 1 ]
     change(#2) [ self(#2).hpp > 20 ]
     change(#3) [ self(#3).hpp > 20 ]
-    use(#1)
     quit [ enemy(#3).dead & enemy(#2).dead ]
 endif
 standby [ self.aura(昏迷).exists ]
