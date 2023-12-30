@@ -2,7 +2,6 @@ if [ enemy.quality = 4  ]
     catch
 endif
 if [ self(#1).active ]
-    use(#3) [ enemy.round = 1 ]
     change(#2) [ self(#2).hpp > 20 ]
     change(#3) [ self(#3).hpp > 20 ]
     use(#1)
