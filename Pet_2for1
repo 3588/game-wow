@@ -6,6 +6,7 @@ if [ self(#1).active ]
     change(#2) [ self(#2).hpp > 20 ]
     change(#3) [ self(#3).hpp > 20 ]
     quit [ enemy(#3).dead & enemy(#2).dead ]
+    use(#1)
 endif
 standby [ self.aura(昏迷).exists ]
 standby [ self.aura(昏睡).exists ]
