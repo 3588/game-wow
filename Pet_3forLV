@@ -1,0 +1,8 @@
+change(next) [ self.dead ]
+quit [ enemy(#1).dead & enemy(#2).dead & enemy(#3).dead ] 
+
+standby [ self.aura(昏迷).exists ]
+standby [ self.aura(昏睡).exists ]
+standby [ self.aura(被变形).exists ]
+
+ability(#1)
