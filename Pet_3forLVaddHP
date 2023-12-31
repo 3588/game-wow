@@ -1,0 +1,14 @@
+ability(复苏之雾) [ round=2 ]
+change(next)[ round=4]
+ability(#3)[ round=5]
+ability(#3)[ round=9]
+
+change(next) [ self.dead ]
+change(next) [ self.hpp <= 10 ]
+quit [ self(#1).dead & self(#2).dead & self(#3).dead ] 
+
+standby [ self.aura(昏迷).exists ]
+standby [ self.aura(昏睡).exists ]
+standby [ self.aura(被变形).exists ]
+
+ability(#1)
