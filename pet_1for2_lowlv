@@ -1,0 +1,8 @@
+ability(#2) [round = 1]
+ability(#1) [round = 2]
+change(#3) [round = 3]
+standby [self.aura(昏迷).exists]
+standby [ self.aura(昏睡).exists ]
+standby [ self.aura(被变形).exists ]
+ability(#2) [enemy.hp<1010 & self.hpp<50 & self.ability(#2).strong]
+ability(#1)
