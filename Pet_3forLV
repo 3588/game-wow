@@ -1,6 +1,10 @@
 change(next) [ self.dead ]
-change(next) [ self.hpp < 5 ]
+change(next) [ self.hpp < 20 ]
 quit [ enemy(#1).dead & enemy(#2).dead & enemy(#3).dead ] 
+quit [ enemy(#1).dead & enemy(#2).dead & enemy(#3).hpp < 5 ] 
+quit [ enemy(#1).dead & enemy(#2).hpp < 5 & !self(#3).exists ]
+
+quit [!self(#2).exists]
 
 standby [ self.aura(昏迷).exists ]
 standby [ self.aura(昏睡).exists ]
