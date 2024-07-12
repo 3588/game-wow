@@ -12,3 +12,10 @@ https://www.curseforge.com/wow/addons/pet-battle-scripts
 阿什兰
 /tar 月
 /tar [swimming]艾姆
+
+
+/use 法夜竖琴
+
+MOP
+/施放 复活战斗宠物(战斗宠物)
+/目标 锦
