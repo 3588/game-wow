@@ -19,3 +19,7 @@ https://www.curseforge.com/wow/addons/pet-battle-scripts
 MOP
 /施放 复活战斗宠物(战斗宠物)
 /目标 锦
+
+>>
+>>Pet_3forLV
+>>第三个宠物放可以对付飞行的
