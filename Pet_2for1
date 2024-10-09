@@ -5,20 +5,20 @@ change(next) [ self.dead ]
 
 if [ self(#1).active ]
     use(#1) [ enemy.round = 1 ]
-    change(#2) [ self(#2).hpp > 5 ]
-    change(#3) [ self(#3).hpp > 5 ]
+    change(#2) [ self(#2).hpp > 11 ]
+    change(#3) [ self(#3).hpp > 11 ]
     quit [ enemy(#3).dead & enemy(#2).dead ]
     use(#1)
 endif
 
 if [ self(#2).active ]
-    change(#3) [ self(#2).hpp < 5 & enemy(#3).hpp > 5 ]
-    change(#1) [ self(#2).hpp < 5 & enemy(#3).hpp < 5 ]
+    change(#3) [ self(#2).hpp < 11 & enemy(#3).hpp >11 ]
+    change(#1) [ self(#2).hpp < 11 & enemy(#3).hpp < 11 ]
     use(#1)
 endif
 if [ self(#3).active ]
-    change(#2) [ self(#3).hpp < 5 & enemy(#2).hpp > 5 ]
-    change(#1) [ self(#3).hpp < 5 & enemy(#2).hpp < 5 ]
-    quit [ enemy(#1).dead & self(#3).hpp < 5 & enemy(#2).hpp < 5  ]
+    change(#2) [ self(#3).hpp < 11 & enemy(#2).hpp > 11 ]
+    change(#1) [ self(#3).hpp < 11 & enemy(#2).hpp < 11 ]
+    quit [ enemy(#1).dead & self(#3).hpp < 11 & enemy(#2).hpp < 11  ]
     use(#1)
 endif
