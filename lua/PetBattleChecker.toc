@@ -1,0 +1,7 @@
+## Interface: 100002
+## Title: Pet Battle Checker
+## Notes: Displays pet battle status with a colored square and level-up time.
+## Author: 3588
+## Version: 1.3
+
+PetBattleChecker.lua
