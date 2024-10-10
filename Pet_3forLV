@@ -1,6 +1,7 @@
 change(next) [ self.dead ]
 change(next) [ self.hpp < 20 ]
 change(#3) [ enemy.type=飞行& self(#3).hpp > 20  ]
+change(#2) [ enemy.type=水栖& self(#2).hpp > 20  &  round >=5 ]
 
 quit [ self(#1).dead & self(#2).dead & self(#3).dead ] 
 quit [ self(#1).dead & self(#2).dead & self(#3).hpp < 5 ] 
