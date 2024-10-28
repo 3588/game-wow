@@ -18,11 +18,7 @@ standby [ self.aura(被变形).exists ]
 
 ability(离地升空) [ enemy.type=水栖 ]
 
-ability(吞食) [ enemy.type=小动物 & round=1 ]
-
-ability(吞食) [ round=3 ]
-
-ability(吞食) [ round=5 ]
+ability(吞食) [ enemy.type=小动物 ]
 
 ability(爪击) [ enemy.type=小动物 ]
 
