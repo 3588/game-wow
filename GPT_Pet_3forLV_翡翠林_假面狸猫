@@ -6,6 +6,8 @@ change(#2) [ enemy.type=水栖 ]
 
 change(#1) [ enemy.type=小动物 ]
 
+change(#1) [ enemy.type=野兽 ]
+
 quit [ self(#1).dead & self(#2).dead & self(#3).dead ]
 
 quit [ self(#1).dead & self(#2).hpp < 5 ]
@@ -17,6 +19,8 @@ standby [ self.aura(昏睡).exists ]
 standby [ self.aura(被变形).exists ]
 
 ability(离地升空) [ enemy.type=水栖 ]
+
+ability(吞食) [ enemy.hp < 200 ]
 
 ability(吞食) [ enemy.type=小动物 & enemy.hp < 400 ]
 
