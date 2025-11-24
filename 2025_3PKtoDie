@@ -1,0 +1,11 @@
+change(next) [self.dead]
+
+standby [self.aura(昏迷).exists]
+standby [self.aura(沉睡).exists]
+standby [self.aura(昏睡).exists]
+
+standby [self.aura(被变形).exists]
+
+change(next) [self.dead]
+
+ability(#1)
