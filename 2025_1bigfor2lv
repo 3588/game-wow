@@ -1,0 +1,16 @@
+change(next) [self.dead]
+standby [self.aura(昏迷).exists]
+standby [self.aura(昏睡).exists]
+standby [self.aura(被变形).exists]
+
+if [self(#1).active]
+    change(#2) [round=2]
+    ability(#1)
+endif
+
+if [self(#2).active]
+    change(#3) [round=4]
+    ability(#1)
+endif
+
+ability(#1)
